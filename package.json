@@ -1,0 +1,35 @@
+{
+  "name": "use-bv",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A React hook that checks the visibility state of the browser window.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "build": "rollup -c --environment NODE_ENV:production"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "browser",
+    "visibility",
+    "minimize",
+    "maximize"
+  ],
+  "author": "Robiul Alam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robiulalamdev/use-bv"
+  },
+  "bugs": {
+    "url": "https://github.com/robiulalamdev/use-bv/issues"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0",
+    "rollup": "^4.12.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4"
+  }
+}
