@@ -1,4 +1,4 @@
-# use-bv
+# usebv
 
 A simple React hook to detect browser visibility changes.
 
@@ -7,13 +7,13 @@ A simple React hook to detect browser visibility changes.
 Install the package using npm:
 
 ```sh
-npm install use-bv
+npm install usebv
 ```
 
 or using yarn:
 
 ```sh
-yarn add use-bv
+yarn add usebv
 ```
 
 ## Usage
@@ -22,10 +22,10 @@ Import the hook and use it in your React component:
 
 ```tsx
 import React from "react";
-import useBrowserVisibility from "use-bv";
+import useBv from "usebv";
 
 const App = () => {
-  const visibility = useBrowserVisibility();
+  const visibility = useBv();
 
   return (
     <div>
@@ -41,7 +41,7 @@ export default App;
 
 ## API
 
-### `useBrowserVisibility()`
+### `usebv()`
 
 Returns an object with the following properties:
 

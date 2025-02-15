@@ -5,7 +5,7 @@ interface VisibilityState {
   message: string;
 }
 
-const useBrowserVisibility = (): VisibilityState => {
+const useBv = (): VisibilityState => {
   const [isVisible, setIsVisible] = useState<VisibilityState>({
     status: true,
     message: "The browser window is currently open and visible.",
@@ -35,4 +35,4 @@ const useBrowserVisibility = (): VisibilityState => {
   return isVisible;
 };
 
-export default useBrowserVisibility;
+export default useBv;
