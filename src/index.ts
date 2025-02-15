@@ -1,7 +1,16 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-const useBrowserVisibility = () => {
-  const [isVisible, setIsVisible] = useState({ status: true, message: "" });
+interface VisibilityState {
+  status: boolean;
+  message: string;
+}
+
+const useBrowserVisibility = (): VisibilityState => {
+  const [isVisible, setIsVisible] = useState<VisibilityState>({
+    status: true,
+    message: "The browser window is currently open and visible.",
+  });
+
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (document.visibilityState === "visible") {
@@ -9,7 +18,7 @@ const useBrowserVisibility = () => {
           status: true,
           message: "The browser window is currently open and visible.",
         });
-      } else if (document.visibilityState === "hidden") {
+      } else {
         setIsVisible({
           status: false,
           message: "The browser window is currently minimized and not visible.",
@@ -22,6 +31,7 @@ const useBrowserVisibility = () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
+
   return isVisible;
 };
 
