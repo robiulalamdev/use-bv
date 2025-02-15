@@ -1,6 +1,6 @@
 {
   "name": "usebv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple React hook to detect browser visibility changes.",
   "main": "dist/index.js",
   "module": "dist/index.js",
